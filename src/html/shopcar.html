@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link href="../css/shopcar.css" rel="stylesheet" type="text/css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="left">
+                <li class="login">
+                    <a href="login.html" class="red">亲，请登录</a>
+                    <a href="register.html">免费注册</a>
+                </li>
+                <li class="mobile">
+                    <a href="http://www.taobao.com">手机逛淘宝</a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="http://www.taobao.com">淘宝网首页</a>
+                </li>
+                <li class="site">
+                    <a href="">我的淘宝</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                    <div class="subnav">
+                        <div class="subnav-list">
+                            <a href="">已买到的宝贝</a>
+                            <a href="">我的足迹</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="" style="color:#fc4200">购物车</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                </li>
+                <li class="site">
+                    <a href="">收藏夹</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                    <div class="subnav">
+                        <div class="subnav-list">
+                            <a href="">收藏的宝贝</a>
+                            <a href="">收藏的店铺</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">商品分类</a>
+                </li>
+                <li class="part">|</li>
+                <li class="site">
+                    <a href="">千牛卖家中心</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                    <div class="subnav">
+                        <div class="subnav-list">
+                            <a href="">免费开店</a>
+                            <a href="">已卖出的宝贝</a>
+                            <a href="">出售中的宝贝</a>
+                            <a href="">卖家服务市场</a>
+                            <a href="">卖家培训中心</a>
+                            <a href="">体检中心</a>
+                            <a href="">问商友</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site">
+                    <a href="">联系客服</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                    <div class="subnav">
+                        <div class="subnav-list">
+                            <a href="">消费者客服</a>
+                            <a href="">卖家客服</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site last">
+                    <a href="">网站导航</a>
+                    <img src="../img/TB1bI4vnOLaK1RjSZFxXXamPFXa-24-24.png">
+                    <div class="subnav net-nav">
+                        <div class="net-wrap">
+                            <div class="net net-first">
+                                <h4 style="color:#fc4200">主题市场</h4>
+                                <ul>
+                                    <li>
+                                        <a href="">女装<i class="hot"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="">男装</a>
+                                    </li>
+                                    <li>
+                                        <a href="">内衣</a>
+                                    </li>
+                                    <li>
+                                        <a href="">鞋靴</a>
+                                    </li>
+                                    <li>
+                                        <a href="">箱包</a>
+                                    </li>
+                                    <li>
+                                        <a href="">婴童</a>
+                                    </li>
+                                    <li>
+                                        <a href="">家电<i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">数码</a>
+                                    </li>
+                                    <li>
+                                        <a href="">手机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">美妆</a>
+                                    </li>
+                                    <li>
+                                        <a href="">珠宝</a>
+                                    </li>
+                                    <li>
+                                        <a href="">眼镜</a>
+                                    </li>
+                                    <li>
+                                        <a href="">手表</a>
+                                    </li>
+                                    <li>
+                                        <a href="">运动</a>
+                                    </li>
+                                    <li>
+                                        <a href="">户外</a>
+                                    </li>
+                                    <li>
+                                        <a href="">乐器</a>
+                                    </li>
+                                    <li>
+                                        <a href="">游戏</a>
+                                    </li>
+                                    <li>
+                                        <a href="">动漫</a>
+                                    </li>
+                                    <li>
+                                        <a href="">影视</a>
+                                    </li>
+                                    <li>
+                                        <a href="">美食</a>
+                                    </li>
+                                    <li>
+                                        <a href="">鲜花</a>
+                                    </li>
+                                    <li>
+                                        <a href="">宠物</a>
+                                    </li>
+                                    <li>
+                                        <a href="">农资</a>
+                                    </li>
+                                    <li>
+                                        <a href="">房产</a>
+                                    </li>
+                                    <li>
+                                        <a href="">装修</a>
+                                    </li>
+                                    <li>
+                                        <a href="">建材</a>
+                                    </li>
+                                    <li>
+                                        <a href="">家居
+                                        <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">百货</a>
+                                    </li>
+                                    <li>
+                                        <a href="">汽车</a>
+                                    </li>
+                                    <li>
+                                        <a href="">二手车</a>
+                                    </li>
+                                    <li>
+                                        <a href="">办公</a>
+                                    </li>
+                                    <li>
+                                        <a href="">定制</a>
+                                    </li>
+                                    <li>
+                                        <a href="">教育</a>
+                                    </li>
+                                    <li>
+                                        <a href="">卡券</a>
+                                    </li>
+                                    <li>
+                                        <a href="">本地</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="net  net-second">
+                                <h4 style="color:#9fb838">特色市场</h4>
+                                <ul>
+                                    <li>
+                                        <a href="">美妆秀</a>
+                                    </li>
+                                    <li>
+                                        <a href="">全球购
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">腔调</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘女郎</a>
+                                    </li>
+                                    <li>
+                                        <a href="">星店</a>
+                                    </li>
+                                    <li>
+                                        <a href="">极有家
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里拍卖</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘宝众筹</a>
+                                    </li>
+                                    <li>
+                                        <a href="">飞猪</a>
+                                    </li>
+                                    <li>
+                                        <a href="">亲宝贝
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">闲鱼</a>
+                                    </li>
+                                    <li>
+                                        <a href="">农资</a>
+                                    </li>
+                                    <li>
+                                        <a href="">天天特卖
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Outlets</a>
+                                    </li>
+                                    <li>
+                                        <a href="">俪人购</a>
+                                    </li>
+                                    <li>
+                                        <a href="">聚名品</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘抢购</a>
+                                    </li>
+                                    <li>
+                                        <a href="">全球精选</a>
+                                    </li>
+                                    <li>
+                                        <a href="">非常大牌</a>
+                                    </li>
+                                    <li>
+                                        <a href="">试用</a>
+                                    </li>
+                                    <li>
+                                        <a href="">量贩团</a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里翻译
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="net net-third">
+                                <h4 style="color:#d75696">阿里APP</h4>
+                                <ul>
+                                    <li>
+                                        <a href="">淘宝
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">全球购</a>
+                                    </li>
+                                    <li>
+                                        <a href="">天猫</a>
+                                    </li>
+                                    <li>
+                                        <a href="">支付宝</a>
+                                    </li>
+                                    <li>
+                                        <a href="">聚划算</a>
+                                    </li>
+                                    <li>
+                                        <a href="">飞猪</a>
+                                    </li>
+                                    <li>
+                                        <a href="">蚂蚁聚宝
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">旺信</a>
+                                    </li>
+                                    <li>
+                                        <a href="">闲鱼
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里钱盾</a>
+                                    </li>
+                                    <li>
+                                        <a href="">钉钉
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">高德地图</a>
+                                    </li>
+                                    <li>
+                                        <a href="">点点虫</a>
+                                    </li>
+                                    <li>
+                                        <a href="">虾米音乐</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘票票</a>
+                                    </li>
+                                    <li>
+                                        <a href="">菜鸟裹裹
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">爱逛街</a>
+                                    </li>
+                                    <li>
+                                        <a href="">拍卖会</a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里云</a>
+                                    </li>
+                                    <li>
+                                        <a href="">网商银行</a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里邮箱
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里众包</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="net net-last">
+                                <h4 style="color:#2e9fdb">精彩推荐集</h4>
+                                <ul>
+                                    <li>
+                                        <a href="">余额宝
+                                            <i class="hot"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">大牌捡宝</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘公仔</a>
+                                    </li>
+                                    <li>
+                                        <a href="">浏览器</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘宝香港</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘宝台湾</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘宝全球</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘宝东南亚</a>
+                                    </li>
+                                    <li>
+                                        <a href="">闺蜜淘货</a>
+                                    </li>
+                                    <li>
+                                        <a href="">大众评审</a>
+                                    </li>
+                                    <li>
+                                        <a href="">淘工作
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">阿里巴巴认证
+                                            <i class="new"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <ul class="itemlist"></ul>
+        <div class="total">
+            <span id="zong">总价:0</span>
+            <button class="submit">立即购买</button>
+        </div>
+        <script src="../js/shopcar.js">
+        </script>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <p>
+                <span>
+                    <a href="http://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.taobao.com">淘宝网</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.tmall.com">天猫</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://ju.taobao.com">聚划算</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.aliexpress.com">全球速卖通</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alibaba.com">阿里巴巴国际交易市场</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.1688.com">1688</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alimama.com">阿里妈妈</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.fliggy.com/">飞猪</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.aliyun.com">阿里云计算</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alios.com">AliOS</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.aliqin.com">阿里通信</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.etao.com">一淘</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.net.cn">万网</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.autonavi.com">高德</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.uc.cn/">UC</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.umeng.com">友盟</a>
+                </span>
+                <br>
+                <span>
+                    <a href="http://www.xiami.com">虾米</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.damai.cn/">大麦网</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.dingtalk.com/?lwfrom=20150130160830727">钉钉</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="https://www.alipay.com">支付宝</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.youku.com/">优酷</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.tudou.com/">土豆</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alihealth.cn/">阿里健康</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alibabapictures.com/simp/0-home.html">阿里影业</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.alisports.com/cn/">阿里体育</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.mybank.cn/">网商银行</a>
+                </span>
+                <b>|</b>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span>
+                    <a href="about.html">关于淘宝</a>
+                </span>
+                <span>
+                    <a href="">合作伙伴</a>
+                </span>
+                <span>
+                    <a href="">营销中心</a>
+                </span>
+                <span>
+                    <a href="">廉正举报</a>
+                </span>
+                <span>
+                    <a href="">联系客服</a>
+                </span>
+                <span>
+                    <a href="">开放平台</a>
+                </span>
+                <span>
+                    <a href="">诚征英才</a>
+                </span>
+                <span>
+                    <a href="">联系我们</a>
+                </span>
+                <span>
+                    <a href="">网站地图</a>
+                </span>
+                <span>
+                    <a href="">隐私权政策</a>
+                </span>
+                <span>
+                    <a href="">法律声明</a>
+                </span>
+                <span>
+                    <a href="">知识产权</a>
+                </span>
+                <b>|</b>
+                <em>© 2003-现在 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <span>
+                    <a href="">增值电信业务经营许可证：浙B2-20080224</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="">增值电信业务经营许可证（跨地区）： B2-20150210</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="">网络文化经营许可证：浙网文[2016]0268-027号</a>
+                </span>
+                <b>|</b>
+                <i>浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</i>
+            </p>
+            <p>
+                <span>
+                    <a href="">互联网药品信息服务资格证书（浙）-经营性-2018-0010</a>
+                </span>
+                <b>|</b>
+                <i>短消息类服务接入代码使用证书：号【2016】00154-A01</i>
+                <b>|</b><i>信息网络传播视听许可证：1109364号</i>
+                <b>|</b>
+                <span>
+                    <a href="">出版物网络交易平台服务经营备案号：新出发浙备字第002号</a>
+                </span>
+            </p>
+            <p>
+                <span>
+                    <a href="">
+                        <span class="mod"></span>浙公网安备 33010002000078号
+                </a>
+                </span>
+                <b>|</b>
+                <i>广播电视节目制作经营许可证（浙）字第01012号</i>
+                <b>|</b>
+                <i>市场名称登记证：工商网市字3301004120号</i>
+                <b>|</b>
+                <i>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</i>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
